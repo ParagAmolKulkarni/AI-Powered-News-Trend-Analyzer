@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.0-green)](https://flask.palletsprojects.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 
 A real-time dashboard that analyzes news trends using NLP to classify topics and sentiment across global news sources. Deployed with a professional portfolio-ready UI featuring personal branding elements.
 
