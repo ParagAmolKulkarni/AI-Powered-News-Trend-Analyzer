@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Trend Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <!-- templates/index.html -->
+<div class="header">
+    <div class="header-content">
+        <div class="profile-section">
+            <img src="/static/profile.jpeg" alt="Parag Amol Kulkarni" class="profile-photo">
+            <div class="profile-info">
+                <h1><i class="fas fa-brain"></i> AI News Trend Analyzer</h1>
+                <p>Created by <span class="highlight-name">Parag Amol Kulkarni</span></p>
+            </div>
+        </div>
+        <div class="header-links">
+            <a href="https://linkedin.com/in/parag-amol-kulkarni" target="_blank" class="linkedin-btn">
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <!-- Topic Distribution -->
+        <div class="card">
+            <h2><i class="fas fa-chart-bar"></i> Topic Distribution</h2>
+            <div class="chart-container">
+                <canvas id="topicChart"></canvas>
+            </div>
+        </div>
+        
+        <!-- Sentiment Analysis -->
+        <div class="card">
+            <h2><i class="fas fa-smile"></i> Sentiment Analysis</h2>
+            <div class="chart-container">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Top Trending News -->
+    <div class="card">
+        <h2><i class="fas fa-fire"></i> Top Trending News</h2>
+        <div class="trend-grid" id="trending-news">
+            <!-- Will be populated by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Latest Headlines -->
+    <div class="card">
+        <h2><i class="fas fa-newspaper"></i> Latest Headlines</h2>
+        <table id="headlines">
+            <thead>
+                <tr>
+                    <th>Headline</th>
+                    <th>Source</th>
+                    <th>Topic</th>
+                    <th>Sentiment</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+<!-- templates/index.html -->
+<footer>
+    <div class="footer-content">
+        <div class="copyright">
+            <i class="far fa-copyright"></i> 2023 
+            <span class="highlight-name">Parag Amol Kulkarni</span>. All rights reserved.
+        </div>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/parag-amol-kulkarni" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ParagAmolKulkarni" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:paragkulkarni115@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <div class="watermark">
+            <span>AI News Trend Analyzer</span>
+            <div class="animated-watermark">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>
